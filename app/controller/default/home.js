@@ -36,9 +36,10 @@ class HomeController extends Controller {
     }
   }
   async updatePost() {
-    const row = this.ctx.request.body
-    const results = await this.app.mysql.update('article', row);
-    // const results = await this.app.mysql.select("type_table");
+    const { id } = this.ctx.params;
+    const row = this.ctx.request.body;
+    const rowData = await this.app.mysql.get("article", { id });
+    const results = await this.app.mysql.update('article', Object.assign(rowData, row));
 
     this.ctx.body={
       data: results

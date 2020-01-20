@@ -31,3 +31,58 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+
+## RESTful API
+
+参考：[实现 RESTful API](https://eggjs.org/zh-cn/tutorials/restful.html)
+
+### 获取文章列表
+
++ `GET /default/posts`
++ 响应状态码：200
++ 响应体：
+
+```json
+
+```
+
+### 获取单个文章
+
++ `GET /default/posts/57ea2`
++ 响应状态码：200
++ 响应体：
+
+```json
+
+```
+
+### 创建文章
+
++ `POST /default/posts`
++ 响应状态码：200
++ 响应体：
+
+```json
+
+```
+
+### 更新文章
+
++ `PUT /default/posts/57ea2`
++ 响应状态码：200
++ 响应体：
+
+```json
+
+```
+
+### 删除文章
+
++ `DELETE /default/posts/57ea2`
++ 响应状态码：200
++ 响应体：
+
+```json
+
+```
