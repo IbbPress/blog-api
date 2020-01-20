@@ -8,6 +8,7 @@ module.exports = app => {
   // router.get('/', controller.home.index);
 
 
+  require('./router/admin')(app);
   require('./router/default')(app);
 
 
