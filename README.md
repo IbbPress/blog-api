@@ -39,7 +39,7 @@ $ npm stop
 
 ### 获取文章列表
 
-+ `GET /default/posts`
++ `GET /ibb/admin/v1/posts`
 + 响应状态码：200
 + 响应体：
 
@@ -49,7 +49,7 @@ $ npm stop
 
 ### 获取单个文章
 
-+ `GET /default/posts/57ea2`
++ `GET /ibb/admin/v1/posts/57ea2`
 + 响应状态码：200
 + 响应体：
 
@@ -59,7 +59,7 @@ $ npm stop
 
 ### 创建文章
 
-+ `POST /default/posts`
++ `POST /ibb/admin/v1/posts`
 + 响应状态码：200
 + 响应体：
 
@@ -69,7 +69,7 @@ $ npm stop
 
 ### 更新文章
 
-+ `PUT /default/posts/57ea2`
++ `PUT /ibb/admin/v1/posts/57ea2`
 + 响应状态码：200
 + 响应体：
 
@@ -79,7 +79,7 @@ $ npm stop
 
 ### 删除文章
 
-+ `DELETE /default/posts/57ea2`
++ `DELETE /ibb/admin/v1/posts/57ea2`
 + 响应状态码：200
 + 响应体：
 
