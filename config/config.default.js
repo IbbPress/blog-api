@@ -22,11 +22,16 @@ module.exports = appInfo => {
     enable: true,
     package: 'egg-mysql',
     client: {
-
+      host: 'localhost',
+      port: '3306',
+      user: 'root',
+      password: 'iforget',
+      database: 'ibbpress',
     },
     app: true,
     agent: false,
   }
+  
   config.security = {
     csrf: {
       enable: false
